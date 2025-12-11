@@ -1,0 +1,98 @@
+body {
+    background: radial-gradient(circle at top, #0a0f24, #04060d 70%);
+    color: #eaefff;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    /* background: url("https://i.ibb.co/8m4Jm7P/stars.png"); */
+    opacity: 0.35;
+    pointer-events: none;
+    animation: twinkle 8s infinite linear;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.45;
+    }
+
+    to {
+        opacity: 0.3;
+    }
+}
+
+
+.space-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(0, 110, 255, 0.25);
+    padding: 24px;
+}
+
+.space-input {
+    width: 100%;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.25s;
+}
+
+.space-input:focus {
+    border-color: #6eaaff;
+    box-shadow: 0 0 8px rgba(0, 110, 255, 0.45);
+}
+
+
+.btn-neon {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, #0066ff, #9b4dff);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 110, 255, 0.6);
+    transition: 0.25s ease;
+}
+
+.btn-neon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 14px rgba(0, 110, 255, 0.8);
+}
+
+
+.space-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.space-table th {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.space-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.space-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
