@@ -152,5 +152,3 @@ Token akan hilang saat logout karena localStorage dibersihkan.
 ✔️ Login page
 ✔️ Protected route
 ✔️ UI tema luar angkasa
-⬜ Upload gambar laptop (opsional)
-⬜ Dark mode toggle (opsional)
